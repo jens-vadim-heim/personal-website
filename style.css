@@ -131,6 +131,11 @@ img{
     width: 50%;
 }
 
+.flashcards-img{
+    width: 50%;
+    border: 1px solid rgb(213, 213, 213);
+}
+
 .img-container{
     display: flex;
     gap: 10px;
@@ -152,6 +157,9 @@ footer{
 @media (max-width: 800px) {
     .img-container{
         flex-direction: column;
+    }
+    .flashcards-img{
+        width: 100%;
     }
     .weather-img{
         width: 100%;
