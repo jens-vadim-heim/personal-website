@@ -57,7 +57,8 @@ nav {
 
 .hero-text-container {
   background-color: rgba(255, 255, 255, 0.682);
-  max-width: 40%;
+  width: 33%;
+  /* min-width: fit-content; */
   border-radius: 10px;
   padding: 40px;
   display: flex;
@@ -83,16 +84,13 @@ hr {
 .cv-knapp {
   display: block;
   width: fit-content;
-  background-color: #333333;
   color: white;
   text-decoration: none;
   padding: 10px;
   border-radius: 20px;
-  transition-duration: 500ms;
+  background: #a4917b;
 }
 .cv-knapp:hover {
-  transform: scale(1.1);
-  background: #a4917b;
   text-decoration: underline;
   cursor: pointer;
 }
@@ -144,42 +142,52 @@ footer {
 
 .portfolio-item-content {
   display: flex;
-  flex-wrap: wrap;
   align-items: flex-start;
-  gap: 20px;
+  gap: 10px;
+  /* outline: 1px solid red; */
 }
 
-.portfolio-text-content {
-  flex: 1;
+.portfolio-item-content > * {
+  flex: 1 1 50%;
+  /* outline: 1px solid red; */
 }
 
 .todo-skjermbilde {
-  max-width: 50%;
-  height: auto;
-}
-
-img {
-  width: 100%;
   display: block;
+  width: 500px;
+  margin: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .weather-img {
   width: 50%;
 }
 
-.flashcards-img {
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-  border: 1px solid grey;
+.wrap {
+  flex-wrap: wrap;
 }
 
-.grid {
-  padding: 10px;
-  display: grid;
-  grid-template-columns: repeat(2, 50%);
-  grid-template-rows: auto;
+.flex {
+  display: flex;
+  justify-content: space-around;
   gap: 10px;
+}
+
+.no-flex {
+  display: block;
+}
+
+.img-container {
+  flex: 1 1 50%;
+}
+
+.flashcards-img {
+  border: 1px solid grey;
+  display: block;
+  width: 400px;
+  max-width: 100%;
+  height: auto;
 }
 
 @media (max-width: 800px) {
@@ -203,7 +211,7 @@ img {
   }
   .hero-text-container {
     border-radius: 10px;
-    width: 25%;
+    /* width: 25%; */
     gap: 0;
   }
   .hero-text {
@@ -223,8 +231,11 @@ img {
     max-width: none;
   }
 
-  .grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
+  .flashcards-img {
+    max-width: 100%;
+  }
+
+  .flex {
+    flex-direction: column;
   }
 }
