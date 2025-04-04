@@ -1,10 +1,9 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: Poppins, sans-serif;
   color: #333333;
-  box-sizing: border-box;
-  /* outline: 1px solid red; */
 }
 html {
   scroll-behavior: smooth;
@@ -17,8 +16,9 @@ body {
 .wrapper {
   width: 80%;
   margin: auto;
-  max-width: 1200px;
+  max-width: 1000px;
 }
+
 nav {
   background-color: #f5f1e6;
   padding: 10px;
@@ -37,11 +37,9 @@ nav {
   padding: 10px;
   text-decoration: none;
   color: black;
-  transition-duration: 300ms;
 }
 .navbar a:hover {
   color: #a4917b;
-  text-decoration: underline;
 }
 
 #hero {
@@ -49,23 +47,31 @@ nav {
   background-size: cover;
   background-position: right 35% top 30%;
   background-repeat: no-repeat;
-  height: 600px;
-  box-shadow: 10px 10px 20px rgb(150, 150, 150);
+
+  max-width: 100%;
+  height: 500px;
+
   display: flex;
   justify-content: flex-start;
+  align-items: center;
+
+  padding: 0;
 }
 
 .hero-text-container {
-  background-color: rgba(255, 255, 255, 0.682);
-  width: 33%;
-  /* min-width: fit-content; */
-  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(3px);
+
+  height: 100%;
+  max-width: 42%;
+
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
   padding: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 50px;
   text-align: center;
 }
 
@@ -74,7 +80,6 @@ nav {
   flex-direction: column;
   align-items: center;
   font-size: 2rem;
-  font-weight: 600;
 }
 
 hr {
@@ -88,10 +93,13 @@ hr {
   text-decoration: none;
   padding: 10px;
   border-radius: 20px;
-  background: #a4917b;
+  background: #504be7;
+  width: max-content;
+  font-size: 1.2rem;
 }
 .cv-knapp:hover {
-  text-decoration: underline;
+  /* text-decoration: underline; */
+  background: #443fc3;
   cursor: pointer;
 }
 
@@ -102,6 +110,7 @@ section {
   margin: 30px auto;
 }
 
+h4,
 p {
   margin: 20px 0;
 }
@@ -112,27 +121,22 @@ p {
   justify-content: center;
   gap: 30px;
 }
+
 .contact-links a {
   text-decoration: none;
   cursor: pointer;
 }
+
 .contact-links a:hover {
   color: #a4917b;
   text-decoration: underline;
   transition-duration: 300ms;
 }
 
-.img-container {
-  display: flex;
-  gap: 10px;
-}
-
-h4 {
-  margin-top: 20px;
-}
 .skills {
   margin-left: 20px;
 }
+
 footer {
   background-color: #333333;
   padding: 10px;
@@ -142,100 +146,46 @@ footer {
 
 .portfolio-item-content {
   display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  /* outline: 1px solid red; */
-}
-
-.portfolio-item-content > * {
-  flex: 1 1 50%;
-  /* outline: 1px solid red; */
-}
-
-.todo-skjermbilde {
-  display: block;
-  width: 500px;
-  margin: auto;
-  max-width: 100%;
-  height: auto;
-}
-
-.weather-img {
-  width: 50%;
-}
-
-.wrap {
-  flex-wrap: wrap;
-}
-
-.flex {
-  display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   gap: 10px;
 }
 
-.no-flex {
-  display: block;
-}
-
-.img-container {
-  flex: 1 1 50%;
-}
-
-.flashcards-img {
-  border: 1px solid grey;
-  display: block;
+img {
   width: 400px;
   max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgb(149, 149, 149);
+  display: block;
   height: auto;
+  margin: auto;
+  transition: transform 0.3s ease-in-out;
 }
 
-@media (max-width: 800px) {
-  .img-container {
-    flex-direction: column;
-  }
-  .flashcards-img {
-    width: 100%;
-  }
-  .weather-img {
-    width: 100%;
-  }
+img:hover {
+  transform: scale(1.2);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  gap: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
   #hero {
     height: 300px;
   }
   .navbar {
     overflow-x: auto;
   }
-  #hero {
-    padding: 10px;
-  }
-  .hero-text-container {
-    border-radius: 10px;
-    /* width: 25%; */
-    gap: 0;
-  }
   .hero-text {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
   .cv-knapp {
-    margin-top: 0;
-    font-size: 1rem;
+    font-size: 0.9rem;
     width: max-content;
-  }
-
-  .portfolio-item-content {
-    flex-direction: column;
-  }
-  .todo-skjermbilde {
-    width: 100%;
-    max-width: none;
-  }
-
-  .flashcards-img {
-    max-width: 100%;
-  }
-
-  .flex {
-    flex-direction: column;
   }
 }

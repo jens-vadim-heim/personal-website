@@ -15,7 +15,7 @@
     <nav>
       <div class="nav-container">
         <ul class="navbar">
-          <li><a href="#hero">Topp</a></li>
+          <!-- <li><a href="#hero">Topp</a></li> -->
           <li><a href="#about">Om</a></li>
           <li><a href="#education">Utdanning</a></li>
           <li><a href="#work">Arbeidserfaring</a></li>
@@ -32,21 +32,22 @@
             <p>Jens Vadim Heim</p>
             <hr />
             <p>Utvikler</p>
+            <a
+              href="jens_vadim_heim_cv.pdf"
+              target="_blank"
+              download
+              tooltip=""
+              class="cv-knapp"
+              >Last ned CV</a
+            >
           </div>
-          <a
-            href="jens_vadim_heim_cv.pdf"
-            target="_blank"
-            download
-            class="cv-knapp"
-            >Last ned CV</a
-          >
         </div>
       </section>
 
       <!-- "Om" seksjon -->
       <section id="about">
         <div class="section-content">
-          <h2>Hei!</h2>
+          <h2>Hei! 👋</h2>
           <p>
             Jeg heter Jens Vadim Heim, og jeg har en bakgrunn innen språk og
             informatikk. Jeg har alltid vært interessert i å lære nye ting, og
@@ -173,8 +174,8 @@
             Her følger noen av prosjektene jeg for øyeblikket holder på med.
           </p>
 
+          <!-- ToDo app -->
           <div class="portfolio-item">
-            <!-- ToDo app -->
             <hr />
             <br />
             <h3>
@@ -185,7 +186,7 @@
               >)
             </h3>
             <br />
-            <div class="portfolio-item-content no-flex">
+            <div class="portfolio-item-content flex">
               <div class="portfolio-text-content">
                 <div>
                   Dette er en enkel notat/"todo" app hvor du kan opprette korte
@@ -204,11 +205,10 @@
                 </p>
               </div>
 
-              <div class="flex">
+              <div>
                 <img
                   src="./images/todo-vertikal.png"
                   alt="skjermbilde av todo-appen"
-                  class="todo-skjermbilde"
                 />
               </div>
             </div>
@@ -227,7 +227,7 @@
               >)
             </h3>
             <br />
-            <div class="portfolio-item-content wrap">
+            <div class="portfolio-item-content">
               <div class="portfolio-text-content">
                 <div>
                   Dette er en enkel øvingskort/"flashcards" app hvor du kan
@@ -246,22 +246,15 @@
                 </p>
               </div>
 
-              <div class="flex">
-                <div>
-                  <img
-                    class="flashcards-img"
-                    src="./images/flashcards-skjermbilde1.png"
-                    alt="skjermbilde flashcards-app"
-                  />
-                </div>
-
-                <div>
-                  <img
-                    class="flashcards-img"
-                    src="./images/flashcards-skjermbilde2.png"
-                    alt="skjermbilde flashcards-app"
-                  />
-                </div>
+              <div class="row">
+                <img
+                  src="./images/flashcards-skjermbilde1.png"
+                  alt="skjermbilde flashcards-app"
+                />
+                <img
+                  src="./images/flashcards-skjermbilde2.png"
+                  alt="skjermbilde flashcards-app"
+                />
               </div>
             </div>
 
@@ -286,7 +279,7 @@
                 backend som skjuler OpenWeather API-nøkkelen.
               </p>
             </div>
-            <div class="img-container">
+            <div class="row">
               <img
                 class="weather-img"
                 src="./images/weather-app-oslo.png"
