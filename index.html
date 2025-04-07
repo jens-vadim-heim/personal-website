@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jens Vadim Heim | Frontend utvikler</title>
+    <title>Jens Vadim Heim | Utvikler</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
@@ -24,8 +24,9 @@
       </div>
     </nav>
 
-    <!-- "Forside" seksjon -->
+    <!-- Website wrapper -->
     <div class="wrapper">
+      <!-- "Hero" seksjon -->
       <section id="hero">
         <div class="hero-text-container">
           <div class="hero-text">
@@ -43,7 +44,7 @@
         </div>
       </section>
 
-      <!-- "Om" seksjon -->
+      <!-- Om seksjon -->
       <section id="about">
         <div class="section-content">
           <h2>Hei! 👋</h2>
@@ -79,7 +80,7 @@
         </div>
       </section>
 
-      <!-- "Utdanning" seksjon -->
+      <!-- Utdanning seksjon -->
       <section id="education">
         <div class="section-content">
           <h2>Utdanning</h2>
@@ -157,7 +158,7 @@
         </div>
       </section>
 
-      <!-- "Arbeidserfaring" seksjon -->
+      <!-- Arbeidserfaring seksjon -->
       <section id="work">
         <div class="section-content">
           <h2>Arbeidserfaring</h2>
@@ -172,25 +173,26 @@
           <p>
             Her følger noen av prosjektene jeg for øyeblikket holder på med.
           </p>
+          <hr />
 
           <!-- ToDo app -->
           <div class="portfolio-item">
-            <hr />
             <br />
             <h3>
-              ToDo-app (<a
+              ToDo app (<a
                 href="https://jvh-todo-app.vercel.app"
                 target="_blank"
                 >lenke til siden</a
               >)
             </h3>
-            <br />
-            <div class="portfolio-item-content flex">
+
+            <!-- Todo text -->
+            <div class="portfolio-item-content">
               <div class="portfolio-text-content">
-                <div>
+                <p>
                   Dette er en enkel notat/"todo" app hvor du kan opprette korte
                   "todo"-er og krysse dem ut/slette dem når de vil fjerne dem.
-                </div>
+                </p>
                 <p>
                   Per nå er det ikke mulig å lagre todo-ene (dvs. de vil fjernes
                   når du lukker/oppdaterer siden). Et naturlig neste steg er å
@@ -204,6 +206,7 @@
                 </p>
               </div>
 
+              <!-- Todo images -->
               <div>
                 <img
                   src="./images/todo-vertikal.png"
@@ -211,15 +214,15 @@
                 />
               </div>
             </div>
-
-            <br /><br />
-
-            <!-- Flashcards app -->
-            <div class="portfolio-item"></div>
+            <br />
             <hr />
+          </div>
+
+          <!-- Flashcards app -->
+          <div class="portfolio-item">
             <br />
             <h3>
-              Flashcards-app (<a
+              Flashcards app (<a
                 href="https://jvh-flashcards.vercel.app"
                 target="_blank"
                 >lenke til siden</a
@@ -227,6 +230,7 @@
             </h3>
             <br />
             <div class="portfolio-item-content">
+              <!-- Flashcards text -->
               <div class="portfolio-text-content">
                 <div>
                   Dette er en enkel øvingskort/"flashcards" app hvor du kan
@@ -245,6 +249,7 @@
                 </p>
               </div>
 
+              <!-- Flashcards images -->
               <div class="row">
                 <img
                   src="./images/flashcards-skjermbilde1.png"
@@ -256,11 +261,13 @@
                 />
               </div>
             </div>
+          </div>
+          <br />
+          <br />
+          <hr />
 
-            <br /><br />
-
-            <!-- Weather app -->
-            <hr />
+          <!-- Weather app -->
+          <div class="portfolio-item">
             <br />
             <h3>
               Weather app (<a
@@ -269,7 +276,9 @@
                 >lenke til siden</a
               >)
             </h3>
-            <div class="text-container">
+
+            <!-- Weather tekst -->
+            <div class="portfolio-text-content">
               <p>
                 Dette er en enkel web-app som henter ut og viser grunnleggende
                 værdata gjennom OpenWeather API.
@@ -280,6 +289,8 @@
                 for å reflektere været.
               </p>
             </div>
+
+            <!-- Weather images -->
             <div class="row">
               <img
                 class="weather-img"
@@ -290,6 +301,43 @@
                 class="weather-img"
                 src="./images/weather-app-mexico-city.png"
                 alt="weather-app-screenshot2"
+              />
+            </div>
+          </div>
+          <br />
+          <br />
+          <hr />
+        </div>
+
+        <!-- Movie searcher app -->
+        <div class="portfolio-item">
+          <br />
+          <h3>Movie search app (ikke publisert)</h3>
+
+          <!-- Movie searcher tekst -->
+          <div class="portfolio-item-content">
+            <div class="portfolio-text-content">
+              <p>
+                Dette er en enkel app hvor du kan søke etter filmer/serier etter
+                deres tittel og få informasjon (handling, anmeldelser,
+                metainformasjon) om disse.
+              </p>
+              <p>
+                Appen er for øyeblikket et "work in progress", og mangler blant
+                annet god feilhåndtering.
+              </p>
+              <p>Den er laget med HTML, vanilla CSS og Javascript.</p>
+            </div>
+
+            <!-- Movie searcher images -->
+            <div class="row">
+              <img
+                src="./images/movie-screenshot1.png"
+                alt="a screenshot of the movie searcher app"
+              />
+              <img
+                src="./images/movie-screenshot2.png"
+                alt="a screenshot of the movie searcher app"
               />
             </div>
           </div>
