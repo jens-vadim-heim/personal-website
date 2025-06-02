@@ -1,4 +1,4 @@
-# My personal website
+# My personal website 🧍‍♂️👋
 
 [![Live Demo](https://img.shields.io/badge/Demo-Live-green?style=for-the-badge)]([https://todo-app-three-tau-90.vercel.app/](https://jens-vadim-heim.github.io/personal-website/))
 
