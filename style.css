@@ -139,6 +139,10 @@ p {
   margin-left: 20px;
 }
 
+h4 {
+  margin: 0 0 5px;
+}
+
 footer {
   background-color: #333333;
   padding: 10px;
