@@ -1,43 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JVH | Hjemmeside</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Navigasjonsbar -->
+    <!-- Navbar -->
     <nav>
       <div class="nav-container">
         <ul class="navbar">
-          <!-- <li><a href="#hero">Topp</a></li> -->
           <li><a href="#about">Om</a></li>
-          <li><a href="#education">Utdanning</a></li>
-          <li><a href="#work">Arbeidserfaring</a></li>
           <li><a href="#portfolio">Portefølje</a></li>
+          <li><a href="#education">Utdanning</a></li>
         </ul>
       </div>
     </nav>
 
     <!-- Website wrapper -->
     <div class="wrapper">
-      <!-- "Hero" seksjon -->
+      <!-- Hero seksjon -->
       <section id="hero">
         <div class="hero-text-container">
           <div class="hero-text">
-            <p>Jens Vadim Heim</p>
-            <hr />
-            <p>Utvikler</p>
+            <p class="name">Jens Vadim Heim</p>
+            <p class="title">Utvikler</p>
             <a
               href="jens_vadim_heim_cv.pdf"
               target="_blank"
               download
-              class="cv-knapp"
+              class="cv-button"
               >Last ned CV</a
             >
           </div>
@@ -46,325 +43,236 @@
 
       <!-- Om seksjon -->
       <section id="about">
-        <div class="section-content">
-          <h2>Hei! 👋</h2>
-          <p>
-            Jeg heter Jens Vadim Heim, og jeg har en bakgrunn innen språk og
-            informatikk. Jeg har alltid vært interessert i å lære nye ting, og
-            derfor har jeg også utforsket ulike fagfelt gjennom min tid som
-            student. Etter å ha studert språk, pedagogikk og informatikk, har
-            jeg for tiden valgt å fokusere på å forbedre mine ferdigheter innen
-            teknologier som Python, Java, SQL, HTML, CSS og Javascript (+
-            React).
-          </p>
-          <p>
-            Jeg liker å eksperimentere med ulike teknologier for å bli en bedre
-            utvikler, og for tiden har jeg fokus på frontend webutvikling. Ta en
-            titt på noen av prosjektene mine i "Portefølje" seksjonen under.
-          </p>
-          <p>
-            Jeg er på utkikk etter jobbmuligheter innen frontend-utvikling eller
-            IT generelt. Hvis jeg virker interessant, ikke nøl med å ta kontakt!
-          </p>
-          <div class="contact-links">
-            <a href="mailto:jensvadim@hotmail.com"> 📧 Epost</a>
-            <a
-              href="https://no.linkedin.com/in/jens-vadim-heim-50690b196"
-              target="_blank"
-              >🔗 LinkedIn</a
-            >
-            <a href="https://github.com/jens-vadim-heim" target="_blank"
-              >💻 GitHub</a
-            >
-          </div>
-        </div>
-      </section>
-
-      <!-- Utdanning seksjon -->
-      <section id="education">
-        <div class="section-content">
-          <h2>Utdanning</h2>
-          <br />
-          <h3>Bachelor i informatikk: språkteknologi (2024)</h3>
-          <p>
-            Fullførte en bachelorgrad i informatikk: språkteknologi ved UiO. Jeg
-            lærte programmeringsspråk som Python, Java og JavaScript, samt
-            sentrale konsepter innen algoritmer, databaser, utviklingsmetodikk,
-            maskinlæring og problemløsning.
-          </p>
-          <h4>Nøkkelferdigheter</h4>
-          <ul class="skills">
-            <li>Python, Java</li>
-            <li>SQL</li>
-            <li>HTML, CSS, JavaScript (+React)</li>
-            <li>Git + GitHub</li>
-          </ul>
-          <br />
-          <hr />
-          <br />
-          <h3>
-            Årsstudium i engelsk (2021) & Praktisk pedagogisk utdanning (2022)
-          </h3>
-          <p>
-            Fullførte et årsstudium i engelsk og et årsstudium i pedagogikk
-            (PPU). PPU ga meg erfaring med undervisning og klasseledelse, samt
-            evnen til å formidle kunnskap på en tydelig måte.
-          </p>
-          <h4>Nøkkelferdigheter</h4>
-          <ul class="skills">
-            <li>Pedagogikk</li>
-            <li>Fagdidaktikk</li>
-            <li>Kommunikasjon</li>
-            <li>Praksis fra ungdoms- og videregående skole</li>
-          </ul>
-          <br />
-          <hr />
-          <br />
-          <h3>Mastergrad i russisk (2020)</h3>
-          <p>
-            Fullførte en mastergrad i russisk med fokus på oversettelse mellom
-            russisk og norsk. Masteroppgaven kombinerte praktisk oversettelse og
-            teoretisk analyse.
-          </p>
-          <h4>Nøkkelferdigheter</h4>
-          <ul class="skills">
-            <li>Prosjektarbeid</li>
-            <li>Språk- og oversettelsesteori</li>
-            <li>Dataorganisering</li>
-            <li>Kvalitetssikring</li>
-          </ul>
-          <br />
-          <hr />
-          <br />
-          <h3>Bachelorgrad i japansk (2016)</h3>
-          <p>
-            Fullførte en bachelorgrad i japansk. Studiet inkluderte emner innen
-            språk, litteratur, historie og kultur (samt to utvekslingsopphold i
-            Japan).
-          </p>
-          <h4>Nøkkelferdigheter</h4>
-          <ul class="skills">
-            <li>Kulturforståelse</li>
-            <li>Språkferdigheter</li>
-            <li>Kommunikasjon</li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- Arbeidserfaring seksjon -->
-      <section id="work">
-        <div class="section-content">
-          <h2>Arbeidserfaring</h2>
-          <p>Informasjon om min arbeidserfaring kommer her!</p>
-        </div>
+        <h2 class="section-header">Hei! 👋</h2>
+        <p>
+          Jeg heter Jens Vadim Heim, og jeg har en bakgrunn innen språk og
+          informatikk. Nå fokuserer jeg på frontendutvikling, hvor jeg
+          kombinerer teknisk kunnskap med et øye for design.
+        </p>
+        <p>
+          Jeg jobber mest med HTML, CSS, JavaScript og React, og liker å
+          utforske nye verktøy for å utvikle moderne, brukervennlige løsninger.
+          Ta gjerne en titt på noen av prosjektene mine under!
+        </p>
       </section>
 
       <!-- Portefølje seksjon -->
+
       <section id="portfolio">
-        <div class="section-content">
-          <h2>Portefølje</h2>
-          <p>
-            Her følger noen av prosjektene jeg for øyeblikket holder på med.
-          </p>
-          <hr />
-
+        <h2 class="section-header">Portefølje</h2>
+        <p>Her følger noen av prosjektene jeg for øyeblikket holder på med.</p>
+        <br />
+        <div class="project-grid">
           <!-- ToDo app -->
-          <div class="portfolio-item">
-            <br />
-            <h3>
-              ToDo app (<a
-                href="https://todo-app-three-tau-90.vercel.app/"
-                target="_blank"
-                >live demo</a
-              >,
-              <a
-                href="https://github.com/jens-vadim-heim/todo-app"
-                target="_blank"
-              >
-                GitHub repo</a
-              >)
-            </h3>
 
-            <!-- Todo text -->
-            <div class="portfolio-item-content">
-              <div class="portfolio-text-content">
-                <p>
-                  Dette er en enkel notat/"todo" app hvor du kan opprette korte
-                  "todo"-er og krysse dem ut/slette dem når de vil fjerne dem.
-                </p>
-                <p>
-                  Hver todo lagres i nettleserens localStorage, og fjernes ikke
-                  av å navigere vekk/oppdatere siden.
-                </p>
-                <p>
-                  Den er laget med Javascript (React), stylet med CSS, og bygd
-                  med Vite.
-                </p>
-              </div>
-
-              <!-- Todo images -->
+          <div class="project">
+            <h3 class="project-header">ToDo app</h3>
+            <div class="project-content">
               <div>
                 <img
-                  src="./images/todo-vertikal.png"
+                  src="./images/todo_app_img.png"
                   alt="skjermbilde av todo-appen"
                 />
               </div>
+              <div class="project-text-content">
+                <ul>
+                  <li>Lag, kryss ut og slett oppgaver i en enkel todo-app</li>
+                  <li>
+                    Oppgavene lagres i localStorage og forsvinner ikke ved
+                    oppdatering
+                  </li>
+                </ul>
+                <div class="tech-tags">
+                  <span>React</span><span>CSS</span><span>Vite</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://todo-app-three-tau-90.vercel.app/"
+                    target="_blank"
+                    >live demo</a
+                  >
+                  <a
+                    href="https://github.com/jens-vadim-heim/todo-app"
+                    target="_blank"
+                    >GitHub repo</a
+                  >
+                </div>
+              </div>
             </div>
           </div>
-          <br />
-          <br />
-          <hr />
 
           <!-- Flashcards app -->
-          <div class="portfolio-item">
-            <br />
-            <h3>
-              Flashcards app (<a
-                href="https://jvh-flashcards.vercel.app"
-                target="_blank"
-                >live demo</a
-              >)
-            </h3>
-            <br />
-            <div class="portfolio-item-content">
-              <!-- Flashcards text -->
-              <div class="portfolio-text-content">
-                <div>
-                  Dette er en enkel øvingskort/"flashcards" app hvor du kan
-                  opprette tosidige øvingskort og øve på disse i en egen "Study
-                  mode".
-                </div>
-                <p>
-                  For øyeblikket er det ikke mulig å lagre øvingskortene, dvs.
-                  de forsvinner når du forlater/oppdaterer siden i nettleseren.
-                  Denne funksjonaliteten kommer senere.
-                </p>
-                <p>
-                  Den er laget med HTML, CSS og Javascript (React), bygd med
-                  Vite. Den er responsiv for skjermstørrelsen, og kan testes på
-                  både datamaskin og mindre enheter.
-                </p>
-              </div>
 
-              <!-- Flashcards images -->
-              <div class="row">
+          <div class="project">
+            <h3 class="project-header">Flashcards app</h3>
+            <div class="project-content">
+              <div>
                 <img
                   src="./images/flashcards-skjermbilde1.png"
                   alt="skjermbilde flashcards-app"
                 />
-                <img
-                  src="./images/flashcards-skjermbilde2.png"
-                  alt="skjermbilde flashcards-app"
-                />
+              </div>
+              <div class="project-text-content">
+                <ul>
+                  <li>Lag tosidige flashcards og øv med dem i "Study mode"</li>
+                  <li>
+                    Data lagres foreløpig ikke - kortene forsvinner ved
+                    oppdatering
+                  </li>
+                </ul>
+                <div class="tech-tags">
+                  <span>React</span><span>CSS</span><span>Vite</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://jvh-flashcards.vercel.app" target="_blank"
+                    >live demo</a
+                  >
+                </div>
               </div>
             </div>
           </div>
-          <br />
-          <br />
-          <hr />
 
-          <!-- Movie searcher app -->
-          <div class="portfolio-item">
-            <br />
-            <h3>
-              Movie search app (
-              <a
-                href="https://movie-app-fawn-sigma-25.vercel.app"
-                target="_blank"
-              >
-                live demo</a
-              >,
-              <a
-                href="https://github.com/jens-vadim-heim/movie-app"
-                target="_blank"
-              >
-                GitHub repo </a
-              >)
-            </h3>
+          <!-- Movie app -->
 
-            <!-- Movie searcher tekst -->
-            <div class="portfolio-item-content">
-              <div class="portfolio-text-content">
-                <p>
-                  Dette er en enkel app hvor du kan søke etter filmer/serier og
-                  få informasjon om deres handling, utgivelsesår og imdb-rating.
-                </p>
-                <p>Den er laget med JavaScript (React) og stylet med CSS.</p>
-                <p>Den henter informasjon om filmer og serier vha. OMDb API.</p>
+          <div class="project">
+            <h3 class="project-header">Movie search app</h3>
+            <div class="project-content">
+              <div>
+                <img
+                  src="./images/movie_app_img.png"
+                  alt="a screenshot of the movie searcher app"
+                />
               </div>
-
-              <!-- Movie searcher images -->
-              <div class="row">
-                <img
-                  src="./images/movie-screenshot1.png"
-                  alt="a screenshot of the movie searcher app"
-                />
-                <img
-                  src="./images/movie-screenshot2.png"
-                  alt="a screenshot of the movie searcher app"
-                />
+              <div class="project-text-content">
+                <ul>
+                  <li>
+                    Søk etter filmer og serier og få info om handling, år og
+                    IMDb-rating
+                  </li>
+                </ul>
+                <div class="tech-tags">
+                  <span>React</span><span>CSS</span><span>Vite</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://movie-app-fawn-sigma-25.vercel.app"
+                    target="_blank"
+                    >live demo</a
+                  >
+                  <a
+                    href="https://github.com/jens-vadim-heim/movie-app"
+                    target="_blank"
+                    >GitHub repo</a
+                  >
+                </div>
               </div>
             </div>
           </div>
-          <br />
-          <br />
-          <hr />
 
           <!-- Weather app -->
-          <div class="portfolio-item">
-            <br />
-            <h3>
-              Weather app (
-              <a
-                href="https://weather-app-eight-beta-88.vercel.app"
-                target="_blank"
-              >
-                live demo</a
-              >,
-              <a
-                href="https://github.com/jens-vadim-heim/weather-app"
-                target="_blank"
-              >
-                GitHub repo </a
-              >)
-            </h3>
 
-            <!-- Weather tekst -->
-            <div class="portfolio-text-content">
-              <p>
-                Dette er en web-app som henter ut og viser grunnleggende værdata
-                vha. OpenWeather API.
-              </p>
-              <p>
-                Brukeren skriver inn et sted og - såfremt OpenWeather kjenner
-                igjen stedet - appen oppdateres med værdata.
-              </p>
-            </div>
-
-            <!-- Weather images -->
-            <div class="row">
-              <img
-                class="weather-img"
-                src="./images/weatherapp.png"
-                alt="weather-app-screenshot1"
-              />
-              <img
-                class="weather-img"
-                src="./images/weatherapp2.png"
-                alt="weather-app-screenshot2"
-              />
+          <div class="project">
+            <h3 class="project-header">Weather app</h3>
+            <div class="project-content">
+              <div>
+                <img
+                  src="./images/weatherapp.png"
+                  alt="weather-app-screenshot1"
+                />
+              </div>
+              <div class="project-text-content">
+                <ul>
+                  <li>Henter og viser værdata via OpenWeather API</li>
+                  <li>Søk på sted for å oppdatere værinformasjon</li>
+                </ul>
+                <div class="tech-tags">
+                  <span>React</span><span>CSS</span><span>Vite</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://weather-app-eight-beta-88.vercel.app"
+                    target="_blank"
+                    >live demo</a
+                  >
+                  <a
+                    href="https://github.com/jens-vadim-heim/weather-app"
+                    target="_blank"
+                    >GitHub repo</a
+                  >
+                </div>
+              </div>
             </div>
           </div>
-          <br />
-          <br />
-          <hr />
+        </div>
+      </section>
+
+      <!-- Utdanning -->
+
+      <section id="education">
+        <h2 class="section-header">Utdanning</h2>
+        <div class="education-grid">
+          <div class="edu-card">
+            <h3>Bachelor i informatikk: språkteknologi</h3>
+            <span class="edu-year">2022 - 2024</span>
+            <p>
+              Lærte programmering med Python, Java og JavaScript, samt
+              databaser, algoritmer, maskinlæring og utviklingsmetodikk.
+            </p>
+          </div>
+
+          <div class="edu-card">
+            <h3>PPU + Årsstudium i engelsk</h3>
+            <span class="edu-year">2020 - 2022</span>
+            <p>
+              Erfaring med undervisning og klasseledelse. Trening i å formidle
+              faglig innhold på en tydelig måte.
+            </p>
+          </div>
+
+          <div class="edu-card">
+            <h3>Bachelor + master i russisk</h3>
+            <span class="edu-year">2016 - 2020</span>
+            <p>
+              Masteroppgave om oversettelse mellom russisk og norsk, med både
+              praktisk og teoretisk tilnærming.
+            </p>
+          </div>
+
+          <div class="edu-card">
+            <h3>Bachelor i japansk</h3>
+            <span class="edu-year">2012 - 2016</span>
+            <p>
+              Studier i språk, litteratur og kultur - inkludert to
+              utvekslingsopphold i Japan.
+            </p>
+          </div>
         </div>
       </section>
     </div>
 
-    <!-- Footer  -->
-    <footer></footer>
+    <!-- CTA -->
 
+    <section class="cta">
+      <h2>Ta gjerne kontakt!</h2>
+      <p>Jeg er åpen for prosjekter, samarbeid og jobbmuligheter.</p>
+      <div class="cta-buttons">
+        <a href="mailto:jensvadim@hotmail.com" class="cta-button"
+          >📧 Kontakt meg</a
+        >
+        <a href="jens_vadim_heim_cv.pdf" download class="cta-button"
+          >📄 Last ned CV</a
+        >
+        <a
+          href="https://github.com/jens-vadim-heim"
+          target="_blank"
+          class="cta-button"
+          >💻 GitHub</a
+        >
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer></footer>
     <script>
       const footer = document.querySelector("footer");
       const thisYear = new Date().getFullYear();
