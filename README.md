@@ -13,13 +13,11 @@ A static website built to showcase myself, my background, my skillsets and some 
 
 ## Features
 
-- Information about my background (both educational and professional) and a button to download my CV
-- Links to my LinkedIn, GitHub and live-demos/repos of some of my projects
-- Scrollable, horizontal navbar
+- Information about my profile, projects and educational background
+- Button to download my CV
+- Links to live-demos and GitHub repos of some of my projects
 - Smooth scrolling navigation
 
 ## Future plans
 
-- Improve/change the **design** of the website
 - Add **light mode/dark mode** toggle
-- **Flesh out** the section about my professional background
